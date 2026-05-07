@@ -343,7 +343,7 @@ jobs:
 #        uses: actions/upload-artifact@v4
 #        with:
 #          name: error-screenshots
-#          path: scripts/Godlike/*.png
+#          path: Godlike/*.png
 
       - name: 清理历史
         if: always()
