@@ -12,12 +12,8 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: 拉取私有仓库
+      - name: 拉取仓库
         uses: actions/checkout@v4
-        with:
-          repository: ${{ github.repository_owner }}/scripts
-          token: ${{ secrets.REPO_TOKEN }}
-          path: .
 
       - name: 设置 Python
         uses: actions/setup-python@v5
@@ -341,7 +337,7 @@ jobs:
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
           REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
           PROXY_SERVER: ${{ env.PROXY_SERVER }}
-        run: python scripts/Godlike/main.py
+        run: python main.py
 
 #      - name: 上传截图
 #        if: always()
