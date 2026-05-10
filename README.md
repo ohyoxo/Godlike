@@ -102,6 +102,8 @@
 保存后，续期链接为 `https://godlike.cool/你填的ID`。  
 **将此 ID 填入 GitHub Secrets 的 `GODLIKE_ID` 字段**。
 
+![外链配置](./img/Godlike.png)
+
 ## 2.2 配置 Secrets
 
 | Secret 名称 | 必填 | 说明 | 示例 |
