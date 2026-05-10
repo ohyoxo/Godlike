@@ -54,9 +54,9 @@
 |------------|:---:|------|------|
 | `GODLIKE_1` | ✅ | 主账号，格式 `邮箱-----密码` | `admin@example.com-----MyPassword` |
 | `GODLIKE_2` ~ `GODLIKE_5` | ❌ | 额外账号（最多到5） | 同上 |
+| `REPO_TOKEN` | ✅ | 用于自动回写 Cookie 的 GitHub PAT | `ghp_xxxxxxxxxxxx` |
 | `TG_BOT_TOKEN` | ❌ | Telegram Bot Token | `1234567890:AAE...` |
 | `TG_CHAT_ID` | ❌ | 接收通知的 Chat ID | `123456789` |
-| `REPO_TOKEN` | ❌ | 用于自动回写 Cookie 的 GitHub PAT | `ghp_xxxxxxxxxxxx` |
 | `PROXY_NODE` | ❌ | 代理节点链接（可选） | 见代理格式说明 |
 
 账号 Secret 首次只需提供邮箱和密码，脚本会在登录成功后自动将 Cookie 追加到 Secret 末尾，后续优先使用 Cookie。
